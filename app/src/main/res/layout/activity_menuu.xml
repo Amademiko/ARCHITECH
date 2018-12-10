@@ -51,6 +51,7 @@
                 android:layout_rowWeight="1"
                 app:cardCornerRadius="12dp"
                 app:cardElevation="6dp"
+                android:onClick="DiagnosaLayout"
                 android:layout_margin="12dp">
 
                 <LinearLayout

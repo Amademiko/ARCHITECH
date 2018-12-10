@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         new Handler().postDelayed(new Runnable() {
             public void run(){
-                Intent homeIntent = new Intent(MainActivity.this, Menu.class);
+                Intent homeIntent = new Intent(MainActivity.this, Menuu.class);
                 startActivity(homeIntent);
                 finish();
 
