@@ -13,7 +13,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         new Handler().postDelayed(new Runnable() {
-
             public void run(){
                 Intent homeIntent = new Intent(MainActivity.this, Menu.class);
                 startActivity(homeIntent);
