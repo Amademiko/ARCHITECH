@@ -16,7 +16,7 @@
         android:layout_marginStart="0dp"
         android:layout_marginTop="211dp"
         android:scaleType="fitXY"
-        android:src="@drawable/awal" />
+        android:src="@drawable/header" />
 
 
     <ProgressBar
