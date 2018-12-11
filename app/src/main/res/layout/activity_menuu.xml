@@ -33,7 +33,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:paddingBottom="40dp"
+            android:paddingBottom="50dp"
             android:text="Merupakan aplikasi untuk mengetahui tipe tipe penyakit flu yang kamu derita"
             android:textColor="#8b00ffff"
             android:textSize="18sp" />
