@@ -71,7 +71,7 @@
                     <ImageView
                         android:layout_width="82dp"
                         android:layout_height="71dp"
-                        android:src="@drawable/diagnosaa" />
+                        android:src="@drawable/diagnosis" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -105,7 +105,7 @@
                     <ImageView
                         android:layout_width="82dp"
                         android:layout_height="71dp"
-                        android:src="@drawable/solusii" />
+                        android:src="@drawable/solusi" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -139,7 +139,7 @@
                     <ImageView
                         android:layout_width="82dp"
                         android:layout_height="71dp"
-                        android:src="@drawable/pencegahann" />
+                        android:src="@drawable/pencegahan" />
 
                     <TextView
                         android:layout_width="wrap_content"
