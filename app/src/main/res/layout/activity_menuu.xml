@@ -21,9 +21,6 @@
             android:layout_marginRight="20dp"
             android:layout_marginLeft="20dp">
 
-
-
-            
             
         </RelativeLayout>
 
@@ -33,13 +30,13 @@
             android:src="@drawable/header" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Merupakan aplikasi untuk mengetahui tipe tipe penyakit flu yang kamu derita"
             android:gravity="center"
-            android:textSize="20dp"
+            android:paddingBottom="40dp"
+            android:text="Merupakan aplikasi untuk mengetahui tipe tipe penyakit flu yang kamu derita"
             android:textColor="#8b00ffff"
-            android:paddingBottom="40dp"/>
+            android:textSize="18sp" />
 
 
         <GridLayout
