@@ -171,7 +171,7 @@
 
                     <ImageView
                         android:layout_width="82dp"
-                        android:layout_height="64dp"
+                        android:layout_height="71dp"
                         android:src="@drawable/pengaturan" />
 
                     <TextView
