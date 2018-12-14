@@ -8,10 +8,13 @@
     android:background="@drawable/bgapps">
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="176dp"
+        android:layout_width="326dp"
+        android:layout_height="147dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:src="@drawable/hpencegahan" />
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/hpencegahan"
+        android:scaleType="fitCenter"/>
 
 </RelativeLayout>
