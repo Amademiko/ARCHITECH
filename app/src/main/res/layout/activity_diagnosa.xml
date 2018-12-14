@@ -20,81 +20,74 @@
         android:layout_marginTop="11dp"
         android:src="@drawable/hdiagnosa" />
 
+
+
     <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="74dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="198dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginBottom="295dp">
-
-
-        <CheckBox
-            android:id="@+id/demam"
-            android:layout_width="match_parent"
-            android:layout_height="52dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="14dp"
-            android:text="Apakah Anda Demam ?"
-            android:textAlignment="center"
-            android:textSize="24sp"
-            tools:ignore="HardcodedText" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="444dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="0dp"
-        android:layout_marginBottom="192dp">
+        android:layout_marginBottom="0dp">
 
-        <CheckBox
-            android:id="@+id/pegal"
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="68dp"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:text="Apakah Anda Pegal Pegal ?"
-            android:textAlignment="center"
-            android:textSize="24sp"
-            tools:ignore="HardcodedText" />
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Bagian Kepala"
+            android:textSize="30dp"
+            android:gravity="center"/>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="156dp"
-        android:layout_marginEnd="141dp"
-        android:layout_marginBottom="27dp">
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="4dp"
-            android:onClick="pencegahanLayout"
-            android:text="PERIKSA"
-            android:textAlignment="center"
-            android:textColor="@color/colorPrimary" />
 
-    </LinearLayout>
+            <CheckBox
+                android:id="@+id/demam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:text="Apakah Anda Demam ?"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText"
+                />
+
+
+
+            <CheckBox
+                android:id="@+id/pegal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Apakah Anda Pegal Pegal ?"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText"
+                />
+
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="4dp"
+                android:onClick="pencegahanLayout"
+                android:text="PERIKSA"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary" />
+
+
+        </LinearLayout>
+
 
     </ScrollView>
 
