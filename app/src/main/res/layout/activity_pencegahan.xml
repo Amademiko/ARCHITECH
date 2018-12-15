@@ -15,6 +15,28 @@
         android:layout_marginStart="29dp"
         android:layout_marginTop="14dp"
         android:src="@drawable/hpencegahan"
-        android:scaleType="fitCenter"/>
+        android:scaleType="fitCenter"
+        android:id="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/pencegahanView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/keMainMenu"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="29dp"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/keMainMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="31dp"
+        android:text="Menu Utama"
+        android:onClick="menuuLayout"/>
 
 </RelativeLayout>

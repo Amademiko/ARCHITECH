@@ -44,34 +44,118 @@
             android:gravity="center"/>
 
 
-
             <CheckBox
-                android:id="@+id/demam"
+                android:id="@+id/sakitKepala"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="14dp"
-                android:text="Apakah Anda Demam ?"
-                android:textAlignment="center"
+                android:text="Sakit kepala"
+                android:textAlignment="viewStart"
                 android:textSize="24sp"
-                tools:ignore="HardcodedText"
-                />
-
+                tools:ignore="HardcodedText" />
 
 
             <CheckBox
-                android:id="@+id/pegal"
+                android:id="@+id/pilek"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                android:text="Apakah Anda Pegal Pegal ?"
-                android:textAlignment="center"
+                android:text="Pilek dan hidung tersumbat"
+                android:textAlignment="viewStart"
                 android:textSize="24sp"
-                tools:ignore="HardcodedText"
-                />
+                tools:ignore="HardcodedText" />
 
+
+            <CheckBox
+                android:id="@+id/mataMerah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Mata merah"
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+            <CheckBox
+                android:id="@+id/mataBerair"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Mata berair"
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+            <CheckBox
+                android:id="@+id/bercakMerah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Bercak merah pada tenggorokan hidung dan mata"
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+            <CheckBox
+                android:id="@+id/airHidungBerlebih"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Produksi berlebih cairan hidung"
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+            <CheckBox
+                android:id="@+id/hidungBerair"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Hidung berair"
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+            <CheckBox
+                android:id="@+id/mataGatal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Mata gatal dan sakit"
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+            <CheckBox
+                android:id="@+id/belek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Belek"
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+            <CheckBox
+                android:id="@+id/bengkak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Pembengkakan daerah kepala"
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
 
             <Button
                 android:id="@+id/button2"
@@ -80,7 +164,7 @@
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="4dp"
-                android:onClick="pencegahanLayout"
+                android:onClick="solusiLayout"
                 android:text="PERIKSA"
                 android:textAlignment="center"
                 android:textColor="@color/colorPrimary" />
