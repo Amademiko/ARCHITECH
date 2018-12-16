@@ -1,9 +1,11 @@
 package dev_architech.flu_aktub;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.CheckBox;
@@ -104,29 +106,49 @@ public class Diagnosa4 extends AppCompatActivity {
             diagnosis = diagnosis + diag4[i] + ",";
         }
         int comma = diagnosis.length();
-        int idPenyakit = 1;
+        int idPenyakit = 0;
         //G1.setText(Integer.toString(comma));
         //diagnosis.substring(0,comma-1);
         //G15.setText(diagnosis.substring(0,comma-1));
-        DatabaseHelper dbHelper = new DatabaseHelper(this);
-        SQLiteDatabase db = dbHelper.getReadableDatabase();
-        cursor = db.rawQuery("select *,count(*),cast((count(*)*1.0)/b.jml_gejala as DECIMAL(6,2)) as ini from aturan_table a\n" +
-                "join penyakit_table b on a.id_penyakit = b.penyakit_id\n" +
-                "where a.id_gejala in (" + diagnosis.substring(0,comma-1) + ")\n" +
-                "group by a.id_penyakit\n" +
-                "order by ini DESC\n" +
-                "limit 1;",null);
-        if (cursor.getCount()>0)
-        {
-            cursor.moveToPosition(0);
-            idPenyakit = cursor.getInt(2);
+        if(diag1.length!=0&&diag2.length!=0&&diag3.length!=0&&diag4.length!=0) {
+            DatabaseHelper dbHelper = new DatabaseHelper(this);
+            SQLiteDatabase db = dbHelper.getReadableDatabase();
+            cursor = db.rawQuery("select *,count(*),cast((count(*)*1.0)/b.jml_gejala as DECIMAL(6,2)) as ini from aturan_table a\n" +
+                    "join penyakit_table b on a.id_penyakit = b.penyakit_id\n" +
+                    "where a.id_gejala in (" + diagnosis.substring(0, comma - 1) + ")\n" +
+                    "group by a.id_penyakit\n" +
+                    "order by ini DESC\n" +
+                    "limit 1;", null);
+            if (cursor.getCount() > 0) {
+                cursor.moveToPosition(0);
+                idPenyakit = cursor.getInt(2);
+            }
+            //G45.setText(Integer.toString(diag4.length));
+            Intent intent = new Intent(this, Solusi.class);
+            intent.putExtra("idPenyakit", idPenyakit);
+            //intent.putExtra("diag2", diag2);
+            //intent.putExtra("diag3", diag3);
+            //intent.putExtra("diag4", diag4);
+            startActivity(intent);
         }
-        //G45.setText(Integer.toString(diag4.length));
-        Intent intent = new Intent(this, Solusi.class);
-        intent.putExtra("idPenyakit", idPenyakit);
-        //intent.putExtra("diag2", diag2);
-        //intent.putExtra("diag3", diag3);
-        //intent.putExtra("diag4", diag4);
-        startActivity(intent);
-    }
+        else {
+            AlertDialog.Builder builder = new AlertDialog.Builder(Diagnosa4.this);
+            builder.setTitle("Alert")
+                    .setMessage("Anda tidak mencentang apapun. apakah anda ingin kembali ke halaman utama")
+                    .setPositiveButton("iya", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                            Intent intent = new Intent(Diagnosa4.this, Menuu.class);
+                            startActivity(intent);
+                        }
+                    })
+                    .setNegativeButton("isi kembali", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                            Intent intent = new Intent(Diagnosa4.this, Diagnosa.class);
+                            startActivity(intent);
+                        }
+                    })
+                    .setIcon(android.R.drawable.ic_dialog_alert)
+                    .show();
+        }
+}
 }
