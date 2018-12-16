@@ -51,16 +51,17 @@ public class Solusi extends AppCompatActivity {
     public void cariPenyakit(View view) {
         AutoCompleteTextView actv = (AutoCompleteTextView) findViewById(R.id.autoCompleteTextView);
         cari = actv.getText();
-        TextView namaPenyakit = (TextView) findViewById (R.id.namaPenyakit);
-        TextView solusi = (TextView) findViewById (R.id.solusiView);
-        DatabaseHelper dbHelper = new DatabaseHelper(this);
-        SQLiteDatabase db = dbHelper.getReadableDatabase();
-        cursor = db.rawQuery("SELECT * FROM penyakit_table WHERE penyakit_nama LIKE '%"+ cari +"%'",null);
-        if (cursor.getCount()>0)
-        {
-            cursor.moveToPosition(0);
-            namaPenyakit.setText(cursor.getString(1).toString());
-            solusi.setText(cursor.getString(2).toString());
+        if(cari.length()!=0) {
+            TextView namaPenyakit = (TextView) findViewById (R.id.namaPenyakit);
+            TextView solusi = (TextView) findViewById (R.id.solusiView);
+            DatabaseHelper dbHelper = new DatabaseHelper(this);
+            SQLiteDatabase db = dbHelper.getReadableDatabase();
+            cursor = db.rawQuery("SELECT * FROM penyakit_table WHERE penyakit_nama LIKE '%" + cari + "%'", null);
+            if (cursor.getCount() > 0) {
+                cursor.moveToPosition(0);
+                namaPenyakit.setText(cursor.getString(1).toString());
+                solusi.setText(cursor.getString(2).toString());
+            }
         }
     }
 }
