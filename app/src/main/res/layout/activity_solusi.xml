@@ -32,7 +32,8 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_marginTop="207dp"
-            android:text="TextView" />
+            android:textSize="20dp"
+            />
 
         <AutoCompleteTextView
             android:id="@+id/autoCompleteTextView"
@@ -40,7 +41,7 @@
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/namaPenyakit"
             android:layout_alignParentStart="true"
-            android:layout_marginBottom="23dp"
+            android:layout_marginBottom="45dp"
             android:layout_toStartOf="@+id/pencarian" />
 
         <Button
@@ -50,7 +51,9 @@
             android:layout_alignBottom="@+id/autoCompleteTextView"
             android:layout_alignParentEnd="true"
             android:onClick="cariPenyakit"
-            android:text="cari" />
+            android:text="cari"
+            android:textAllCaps="true"
+            android:background="@color/colorAccent" />
 
     </RelativeLayout>
 
@@ -67,10 +70,10 @@
     <TextView
         android:id="@+id/solusiView"
         android:layout_width="356dp"
-        android:layout_height="262dp"
+        android:layout_height="238dp"
         android:layout_alignBottom="@+id/kePencegahan"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="31dp"
+        android:layout_marginBottom="55dp"
         android:textSize="20dp" />
 
 </RelativeLayout>

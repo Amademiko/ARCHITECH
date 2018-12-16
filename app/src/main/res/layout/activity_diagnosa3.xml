@@ -41,7 +41,9 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:text="Bagian Tubuh"
-                android:textSize="30dp" />
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:textStyle="bold|italic" />
 
             <CheckBox
                 android:id="@+id/G3"
@@ -53,7 +55,8 @@
                 android:text="Pegal pegal"
                 android:textAlignment="viewStart"
                 android:textSize="24sp"
-                tools:ignore="HardcodedText" />
+                tools:ignore="HardcodedText"
+                />
 
 
             <CheckBox
@@ -65,7 +68,8 @@
                 android:text="Ruam pada kulit"
                 android:textAlignment="viewStart"
                 android:textSize="24sp"
-                tools:ignore="HardcodedText" />
+                tools:ignore="HardcodedText"
+                android:layout_marginTop="14dp"/>
 
             <CheckBox
                 android:id="@+id/G9"
@@ -76,7 +80,8 @@
                 android:text="Diare"
                 android:textAlignment="viewStart"
                 android:textSize="24sp"
-                tools:ignore="HardcodedText" />
+                tools:ignore="HardcodedText"
+                android:layout_marginTop="14dp"/>
 
             <CheckBox
                 android:id="@+id/G10"
@@ -87,7 +92,8 @@
                 android:text="Mual dan muntah"
                 android:textAlignment="viewStart"
                 android:textSize="24sp"
-                tools:ignore="HardcodedText" />
+                tools:ignore="HardcodedText"
+                android:layout_marginTop="14dp"/>
 
             <CheckBox
                 android:id="@+id/G13"
@@ -98,7 +104,8 @@
                 android:text="Sakit otot"
                 android:textAlignment="viewStart"
                 android:textSize="24sp"
-                tools:ignore="HardcodedText" />
+                tools:ignore="HardcodedText"
+                android:layout_marginTop="14dp"/>
 
             <CheckBox
                 android:id="@+id/G17"
@@ -109,7 +116,8 @@
                 android:text="Nyeri sendi"
                 android:textAlignment="viewStart"
                 android:textSize="24sp"
-                tools:ignore="HardcodedText" />
+                tools:ignore="HardcodedText"
+                android:layout_marginTop="14dp"/>
 
             <CheckBox
                 android:id="@+id/G18"
@@ -120,7 +128,8 @@
                 android:text="Panas dingin"
                 android:textAlignment="viewStart"
                 android:textSize="24sp"
-                tools:ignore="HardcodedText" />
+                tools:ignore="HardcodedText"
+                android:layout_marginTop="14dp"/>
 
             <CheckBox
                 android:id="@+id/G20"
@@ -131,7 +140,8 @@
                 android:text="Kurang nafsu makan"
                 android:textAlignment="viewStart"
                 android:textSize="24sp"
-                tools:ignore="HardcodedText" />
+                tools:ignore="HardcodedText"
+                android:layout_marginTop="14dp"/>
 
             <CheckBox
                 android:id="@+id/G21"
@@ -142,7 +152,8 @@
                 android:text="Berat badan turun"
                 android:textAlignment="viewStart"
                 android:textSize="24sp"
-                tools:ignore="HardcodedText" />
+                tools:ignore="HardcodedText"
+                android:layout_marginTop="14dp"/>
 
             <CheckBox
                 android:id="@+id/G24"
@@ -153,7 +164,8 @@
                 android:text="Alergi"
                 android:textAlignment="viewStart"
                 android:textSize="24sp"
-                tools:ignore="HardcodedText" />
+                tools:ignore="HardcodedText"
+                android:layout_marginTop="14dp"/>
 
             <CheckBox
                 android:id="@+id/G25"
@@ -164,7 +176,8 @@
                 android:text="Kelelahan berlebih"
                 android:textAlignment="viewStart"
                 android:textSize="24sp"
-                tools:ignore="HardcodedText" />
+                tools:ignore="HardcodedText"
+                android:layout_marginTop="14dp"/>
 
             <CheckBox
                 android:id="@+id/G2"
@@ -175,7 +188,8 @@
                 android:text="Kelelahan"
                 android:textAlignment="viewStart"
                 android:textSize="24sp"
-                tools:ignore="HardcodedText" />
+                tools:ignore="HardcodedText"
+                android:layout_marginTop="14dp"/>
 
             <CheckBox
                 android:id="@+id/G27"
@@ -186,7 +200,8 @@
                 android:text="Muntah dan diare pada anak"
                 android:textAlignment="viewStart"
                 android:textSize="24sp"
-                tools:ignore="HardcodedText" />
+                tools:ignore="HardcodedText"
+                android:layout_marginTop="14dp"/>
 
             <CheckBox
                 android:id="@+id/G29"
@@ -197,7 +212,8 @@
                 android:text="Sakit perut"
                 android:textAlignment="viewStart"
                 android:textSize="24sp"
-                tools:ignore="HardcodedText" />
+                tools:ignore="HardcodedText"
+                android:layout_marginTop="14dp"/>
 
             <CheckBox
                 android:id="@+id/G34"
@@ -208,7 +224,8 @@
                 android:text="Sensitif dengan sinar"
                 android:textAlignment="viewStart"
                 android:textSize="24sp"
-                tools:ignore="HardcodedText" />
+                tools:ignore="HardcodedText"
+                android:layout_marginTop="14dp"/>
 
             <CheckBox
                 android:id="@+id/G39"
@@ -219,7 +236,8 @@
                 android:text="Sheptic shock"
                 android:textAlignment="viewStart"
                 android:textSize="24sp"
-                tools:ignore="HardcodedText" />
+                tools:ignore="HardcodedText"
+                android:layout_marginTop="14dp"/>
 
             <CheckBox
                 android:id="@+id/G40"
@@ -230,7 +248,8 @@
                 android:text="Kegagalan beberapa fungsi organ"
                 android:textAlignment="viewStart"
                 android:textSize="24sp"
-                tools:ignore="HardcodedText" />
+                tools:ignore="HardcodedText"
+                android:layout_marginTop="14dp"/>
 
             <Button
                 android:id="@+id/btndiag3"
@@ -238,7 +257,7 @@
                 android:layout_height="match_parent"
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
-                android:layout_marginBottom="4dp"
+                android:layout_marginTop="14dp"
                 android:text="Lanjut >>"
                 android:textAlignment="center"
                 android:onClick="diagnosa4Layour"
