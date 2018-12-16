@@ -42,6 +42,7 @@ public class Pencegahan extends AppCompatActivity {
             namaPenyakit.setText(cursor.getString(1).toString());
             pencegahan.setText(cursor.getString(3).toString());
         }
+        db.close();
     }
 
     public void menuuLayout(View view) {
@@ -62,6 +63,7 @@ public class Pencegahan extends AppCompatActivity {
                 namaPenyakit.setText("Hasil Diagnosis = " + cursor.getString(1).toString());
                 pencegahan.setText(cursor.getString(3).toString());
             }
+            db.close();
         }
     }
 }
