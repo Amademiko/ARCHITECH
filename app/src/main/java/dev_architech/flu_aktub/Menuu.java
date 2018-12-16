@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 
 public class Menuu extends AppCompatActivity {
-    //DatabaseHelper myDb;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -16,7 +15,18 @@ public class Menuu extends AppCompatActivity {
 
     public void DiagnosaLayout(View view) {
         Intent intent = new Intent(this, Diagnosa.class);
-        //myDb = new DatabaseHelper(this);
+        startActivity(intent);
+    }
+    public void pencegahanLayout(View view) {
+        Intent intent = new Intent(this, Pencegahan.class);
+        startActivity(intent);
+    }
+    public void solusiLayout(View view) {
+        Intent intent = new Intent(this, Solusi.class);
+        startActivity(intent);
+    }
+    public void tentangLayout(View view) {
+        Intent intent = new Intent(this, Tentang.class);
         startActivity(intent);
     }
 }

@@ -90,6 +90,7 @@
                 android:layout_rowWeight="1"
                 app:cardCornerRadius="12dp"
                 app:cardElevation="6dp"
+                android:onClick="solusiLayout"
                 android:layout_margin="12dp">
 
                 <LinearLayout
@@ -124,6 +125,7 @@
                 android:layout_columnWeight="1"
                 android:layout_margin="12dp"
                 app:cardCornerRadius="12dp"
+                android:onClick="pencegahanLayout"
                 app:cardElevation="6dp">
 
                 <LinearLayout
@@ -157,6 +159,7 @@
                 android:layout_rowWeight="1"
                 app:cardCornerRadius="12dp"
                 app:cardElevation="6dp"
+                android:onClick="tentangLayout"
                 android:layout_margin="12dp">
 
                 <LinearLayout

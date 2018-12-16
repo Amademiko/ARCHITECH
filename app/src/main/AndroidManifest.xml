@@ -21,9 +21,11 @@
         <activity
             android:name=".Diagnosa"
             android:parentActivityName=".Menu"></activity>
+        <activity android:name=".Diagnosa2" />
+        <activity android:name=".Diagnosa3" />
+        <activity android:name=".Diagnosa4" />
         <activity android:name=".Pencegahan" />
         <activity android:name=".Menuu" />
         <activity android:name=".Tentang"></activity>
     </application>
-
 </manifest>

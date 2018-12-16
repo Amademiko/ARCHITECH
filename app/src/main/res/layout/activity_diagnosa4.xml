@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Diagnosa4"
+    android:background="@drawable/bgappss">
+
+
+    <ImageView
+        android:layout_width="338dp"
+        android:layout_height="82dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="11dp"
+        android:src="@drawable/hdiagnosa" />
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="444dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="0dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Lain - lain"
+                android:textSize="30dp" />
+
+
+            <CheckBox
+                android:id="@+id/G1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:text="Demam"
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+
+            <CheckBox
+                android:id="@+id/G15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Malaise umum"
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+
+            <CheckBox
+                android:id="@+id/G26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Kemacetan kecil"
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+            <CheckBox
+                android:id="@+id/G30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Rhinorrhea"
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+            <CheckBox
+                android:id="@+id/G35"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Coryza"
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+            <CheckBox
+                android:id="@+id/G36"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Mialgia"
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+            <CheckBox
+                android:id="@+id/G37"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Pnemonia"
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+            <CheckBox
+                android:id="@+id/G44"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Arthralgia"
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/btndiag4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="4dp"
+                android:text="Periksa"
+                android:textAlignment="center"
+                android:onClick="solusiLayout"
+                android:textColor="@color/colorPrimary" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

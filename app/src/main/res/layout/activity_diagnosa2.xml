@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Diagnosa2"
+    android:background="@drawable/bgappss">
+
+
+    <ImageView
+        android:layout_width="338dp"
+        android:layout_height="82dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="11dp"
+        android:src="@drawable/hdiagnosa" />
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="444dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="0dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Bagian Tenggorokan dan dada"
+                android:textSize="30dp" />
+
+
+            <CheckBox
+                android:id="@+id/G7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:text="Sakit tenggorokan"
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+            <CheckBox
+                android:id="@+id/G11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:text="Batuk kering"
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+            <CheckBox
+                android:id="@+id/G14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:text="Batuk berdahak"
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+            <CheckBox
+                android:id="@+id/G12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:text="Sesak napas"
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+            <CheckBox
+                android:id="@+id/G22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:text="Bersin"
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+            <CheckBox
+                android:id="@+id/G28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:text="Nyeri di dada"
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+            <CheckBox
+                android:id="@+id/G38"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:text="Gangguan pernapasan akut(ARDS)"
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+            <CheckBox
+                android:id="@+id/G42"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:text="Cairan mulut meningkat"
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+            <CheckBox
+                android:id="@+id/G43"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:text="Sakit saluran pernapasan atas"
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+            <CheckBox
+                android:id="@+id/G45"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:text="Gejala bronkitis"
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/btndiag2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="4dp"
+                android:text="Lanjut >>"
+                android:textAlignment="center"
+                android:onClick="diagnosa3Layout"
+                android:textColor="@color/colorPrimary" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

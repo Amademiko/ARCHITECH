@@ -17,7 +17,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="27dp"
+        android:layout_marginTop="11dp"
         android:src="@drawable/hdiagnosa" />
 
 
@@ -45,7 +45,7 @@
 
 
             <CheckBox
-                android:id="@+id/sakitKepala"
+                android:id="@+id/G4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
@@ -58,7 +58,7 @@
 
 
             <CheckBox
-                android:id="@+id/pilek"
+                android:id="@+id/G5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
@@ -70,7 +70,7 @@
 
 
             <CheckBox
-                android:id="@+id/mataMerah"
+                android:id="@+id/G6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
@@ -81,7 +81,7 @@
                 tools:ignore="HardcodedText" />
 
             <CheckBox
-                android:id="@+id/mataBerair"
+                android:id="@+id/G16"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
@@ -92,7 +92,7 @@
                 tools:ignore="HardcodedText" />
 
             <CheckBox
-                android:id="@+id/bercakMerah"
+                android:id="@+id/G19"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
@@ -103,7 +103,7 @@
                 tools:ignore="HardcodedText" />
 
             <CheckBox
-                android:id="@+id/airHidungBerlebih"
+                android:id="@+id/G23"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
@@ -114,7 +114,7 @@
                 tools:ignore="HardcodedText" />
 
             <CheckBox
-                android:id="@+id/hidungBerair"
+                android:id="@+id/G31"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
@@ -125,7 +125,7 @@
                 tools:ignore="HardcodedText" />
 
             <CheckBox
-                android:id="@+id/mataGatal"
+                android:id="@+id/G32"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
@@ -136,7 +136,7 @@
                 tools:ignore="HardcodedText" />
 
             <CheckBox
-                android:id="@+id/belek"
+                android:id="@+id/G33"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
@@ -147,7 +147,7 @@
                 tools:ignore="HardcodedText" />
 
             <CheckBox
-                android:id="@+id/bengkak"
+                android:id="@+id/G41"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
@@ -164,8 +164,8 @@
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="4dp"
-                android:onClick="solusiLayout"
-                android:text="PERIKSA"
+                android:onClick="diagnosa2Layout"
+                android:text="Lanjut >>"
                 android:textAlignment="center"
                 android:textColor="@color/colorPrimary" />
 

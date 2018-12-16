@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Diagnosa3"
+    android:background="@drawable/bgappss">
+
+
+    <ImageView
+        android:layout_width="338dp"
+        android:layout_height="82dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="11dp"
+        android:src="@drawable/hdiagnosa" />
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="444dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="0dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Bagian Tubuh"
+                android:textSize="30dp" />
+
+            <CheckBox
+                android:id="@+id/G3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:text="Pegal pegal"
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+
+            <CheckBox
+                android:id="@+id/G8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Ruam pada kulit"
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+            <CheckBox
+                android:id="@+id/G9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Diare"
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+            <CheckBox
+                android:id="@+id/G10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Mual dan muntah"
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+            <CheckBox
+                android:id="@+id/G13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Sakit otot"
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+            <CheckBox
+                android:id="@+id/G17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Nyeri sendi"
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+            <CheckBox
+                android:id="@+id/G18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Panas dingin"
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+            <CheckBox
+                android:id="@+id/G20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Kurang nafsu makan"
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+            <CheckBox
+                android:id="@+id/G21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Berat badan turun"
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+            <CheckBox
+                android:id="@+id/G24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Alergi"
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+            <CheckBox
+                android:id="@+id/G25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Kelelahan berlebih"
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+            <CheckBox
+                android:id="@+id/G2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Kelelahan"
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+            <CheckBox
+                android:id="@+id/G27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Muntah dan diare pada anak"
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+            <CheckBox
+                android:id="@+id/G29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Sakit perut"
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+            <CheckBox
+                android:id="@+id/G34"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Sensitif dengan sinar"
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+            <CheckBox
+                android:id="@+id/G39"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Sheptic shock"
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+            <CheckBox
+                android:id="@+id/G40"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Kegagalan beberapa fungsi organ"
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/btndiag3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="4dp"
+                android:text="Lanjut >>"
+                android:textAlignment="center"
+                android:onClick="diagnosa4Layour"
+                android:textColor="@color/colorPrimary" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
