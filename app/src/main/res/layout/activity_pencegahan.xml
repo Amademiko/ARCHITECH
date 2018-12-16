@@ -20,17 +20,23 @@
 
     <RelativeLayout
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+        android:layout_height="fill_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp">
 
         <TextView
             android:id="@+id/namaPenyakit"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
+            android:layout_height="56dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="213dp"
-             />
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="193dp"
+            android:layout_marginEnd="6dp"
+            android:textSize="20dp" />
 
         <AutoCompleteTextView
             android:id="@+id/autoCompleteTextView"
@@ -38,15 +44,17 @@
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/namaPenyakit"
             android:layout_alignParentStart="true"
-            android:layout_marginBottom="52dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="71dp"
             android:layout_toStartOf="@+id/pencarian" />
 
         <Button
             android:id="@+id/pencarian"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
             android:layout_alignTop="@+id/autoCompleteTextView"
+            android:layout_alignParentEnd="true"
             android:onClick="cariPenyakit"
             android:text="cari" />
 
@@ -55,10 +63,11 @@
 
     <TextView
         android:id="@+id/pencegahanView"
-        android:layout_width="374dp"
-        android:layout_height="254dp"
+        android:layout_width="335dp"
+        android:layout_height="203dp"
         android:layout_alignBottom="@+id/keMainMenu"
         android:layout_centerHorizontal="true"
+        android:layout_marginBottom="68dp"
         android:textSize="20dp" />
 
     <Button

@@ -27,13 +27,16 @@
         <TextView
             android:id="@+id/namaPenyakit"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
+            android:layout_height="56dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="207dp"
-            android:textSize="20dp"
-            />
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="193dp"
+            android:layout_marginEnd="6dp"
+            android:textSize="20dp" />
+
+
 
         <AutoCompleteTextView
             android:id="@+id/autoCompleteTextView"
@@ -41,8 +44,12 @@
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/namaPenyakit"
             android:layout_alignParentStart="true"
-            android:layout_marginBottom="45dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="71dp"
             android:layout_toStartOf="@+id/pencarian" />
+
+
 
         <Button
             android:id="@+id/pencarian"
@@ -69,11 +76,11 @@
 
     <TextView
         android:id="@+id/solusiView"
-        android:layout_width="356dp"
-        android:layout_height="238dp"
+        android:layout_width="333dp"
+        android:layout_height="203dp"
         android:layout_alignBottom="@+id/kePencegahan"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="55dp"
+        android:layout_marginBottom="68dp"
         android:textSize="20dp" />
 
 </RelativeLayout>
