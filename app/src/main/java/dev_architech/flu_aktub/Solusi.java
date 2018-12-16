@@ -42,6 +42,7 @@ public class Solusi extends AppCompatActivity {
             namaPenyakit.setText("Hasil Diagnosis = " + cursor.getString(1).toString());
             solusi.setText(cursor.getString(2).toString());
         }
+        db.close();
     }
     public void pencegahanLayout(View view) {
         Intent intent = new Intent(this, Pencegahan.class);
@@ -62,6 +63,7 @@ public class Solusi extends AppCompatActivity {
                 namaPenyakit.setText(cursor.getString(1).toString());
                 solusi.setText(cursor.getString(2).toString());
             }
+            db.close();
         }
     }
 }

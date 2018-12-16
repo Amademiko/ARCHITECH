@@ -110,7 +110,7 @@ public class Diagnosa4 extends AppCompatActivity {
         //G1.setText(Integer.toString(comma));
         //diagnosis.substring(0,comma-1);
         //G15.setText(diagnosis.substring(0,comma-1));
-        if(diag1.length!=0&&diag2.length!=0&&diag3.length!=0&&diag4.length!=0) {
+        if(diag1.length!=0||diag2.length!=0||diag3.length!=0||diag4.length!=0) {
             DatabaseHelper dbHelper = new DatabaseHelper(this);
             SQLiteDatabase db = dbHelper.getReadableDatabase();
             cursor = db.rawQuery("select *,count(*),cast((count(*)*1.0)/b.jml_gejala as DECIMAL(6,2)) as ini from aturan_table a\n" +
@@ -123,6 +123,7 @@ public class Diagnosa4 extends AppCompatActivity {
                 cursor.moveToPosition(0);
                 idPenyakit = cursor.getInt(2);
             }
+            db.close();
             //G45.setText(Integer.toString(diag4.length));
             Intent intent = new Intent(this, Solusi.class);
             intent.putExtra("idPenyakit", idPenyakit);
