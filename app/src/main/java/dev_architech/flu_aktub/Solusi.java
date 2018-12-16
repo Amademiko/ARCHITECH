@@ -14,7 +14,7 @@ import android.widget.TextView;
 public class Solusi extends AppCompatActivity {
     protected Cursor cursor;
     DatabaseHelper dbHelper;
-    int idPenyakit = 1;
+    int idPenyakit;
     Editable cari;
     String[] penyakitList = {"H1N1", "Flu Babi tipe 1","H1N2","Flu Babi tipe 2","H2N2","Flu Babi tipe 3", "H3N2","Flu Burung tipe 1",
             "H5N1","Flu Burung tipe 2","H6N1","Flu Taiwan","H7N2","Flu Burung tipe 3","H7N3","Flu Burung tipe 4","H7N7","Flu Eropa",
@@ -30,7 +30,7 @@ public class Solusi extends AppCompatActivity {
         actv.setThreshold(1);
         actv.setAdapter(adapter);
 
-        idPenyakit = getIntent().getIntExtra("idPenyakit",1);
+        idPenyakit = getIntent().getIntExtra("idPenyakit",0);
         TextView namaPenyakit = (TextView) findViewById (R.id.namaPenyakit);
         TextView solusi = (TextView) findViewById (R.id.solusiView);
         DatabaseHelper dbHelper = new DatabaseHelper(this);
@@ -39,7 +39,7 @@ public class Solusi extends AppCompatActivity {
         if (cursor.getCount()>0)
         {
             cursor.moveToPosition(0);
-            namaPenyakit.setText(cursor.getString(1).toString());
+            namaPenyakit.setText("Hasil Diagnosis = " + cursor.getString(1).toString());
             solusi.setText(cursor.getString(2).toString());
         }
     }
