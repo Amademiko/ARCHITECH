@@ -64,43 +64,43 @@ public class Diagnosa extends AppCompatActivity {
         diag1 = new String[i];
         i = 0;
         if(G4.isChecked()){
-            diag1[i] = "G4";
+            diag1[i] = "4";
             i++;
         }
         if(G5.isChecked()){
-            diag1[i] = "G5";
+            diag1[i] = "5";
             i++;
         }
         if(G6.isChecked()){
-            diag1[i] = "G6";
+            diag1[i] = "6";
             i++;
         }
         if(G16.isChecked()){
-            diag1[i] = "G16";
+            diag1[i] = "16";
             i++;
         }
         if(G19.isChecked()){
-            diag1[i] = "G19";
+            diag1[i] = "19";
             i++;
         }
         if(G23.isChecked()){
-            diag1[i] = "G23";
+            diag1[i] = "23";
             i++;
         }
         if(G31.isChecked()){
-            diag1[i] = "G31";
+            diag1[i] = "31";
             i++;
         }
         if(G32.isChecked()){
-            diag1[i] = "G32";
+            diag1[i] = "32";
             i++;
         }
         if(G33.isChecked()){
-            diag1[i] = "G33";
+            diag1[i] = "33";
             i++;
         }
         if(G41.isChecked()){
-            diag1[i] = "G41";
+            diag1[i] = "41";
             i++;
         }
         //bengkak.setText(Integer.toString(diag1.length));

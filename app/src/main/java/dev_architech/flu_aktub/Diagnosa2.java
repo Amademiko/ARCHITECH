@@ -61,43 +61,43 @@ public class Diagnosa2 extends AppCompatActivity {
         diag2 = new String[i];
         i = 0;
         if(G7.isChecked()){
-            diag2[i] = "G7";
+            diag2[i] = "7";
             i++;
         }
         if(G11.isChecked()){
-            diag2[i] = "G11";
+            diag2[i] = "11";
             i++;
         }
         if(G14.isChecked()){
-            diag2[i] = "G14";
+            diag2[i] = "14";
             i++;
         }
         if(G12.isChecked()){
-            diag2[i] = "G12";
+            diag2[i] = "12";
             i++;
         }
         if(G22.isChecked()){
-            diag2[i] = "G22";
+            diag2[i] = "22";
             i++;
         }
         if(G28.isChecked()){
-            diag2[i] = "G28";
+            diag2[i] = "28";
             i++;
         }
         if(G38.isChecked()){
-            diag2[i] = "G38";
+            diag2[i] = "38";
             i++;
         }
         if(G42.isChecked()){
-            diag2[i] = "G42";
+            diag2[i] = "42";
             i++;
         }
         if(G43.isChecked()){
-            diag2[i] = "G43";
+            diag2[i] = "43";
             i++;
         }
         if(G45.isChecked()){
-            diag2[i] = "G45";
+            diag2[i] = "45";
             i++;
         }
         //G43.setText(Integer.toString(diag1.length));

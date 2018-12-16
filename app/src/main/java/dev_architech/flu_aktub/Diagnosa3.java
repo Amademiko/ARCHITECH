@@ -90,71 +90,71 @@ public class Diagnosa3 extends AppCompatActivity {
         diag3 = new String[i];
         i = 0;
         if(G3.isChecked()){
-            diag3[i] = "G3";
+            diag3[i] = "3";
             i++;
         }
         if(G8.isChecked()){
-            diag3[i] = "G8";
+            diag3[i] = "8";
             i++;
         }
         if(G9.isChecked()){
-            diag3[i] = "G9";
+            diag3[i] = "9";
             i++;
         }
         if(G10.isChecked()){
-            diag3[i] = "G10";
+            diag3[i] = "10";
             i++;
         }
         if(G13.isChecked()){
-            diag3[i] = "G13";
+            diag3[i] = "13";
             i++;
         }
         if(G17.isChecked()){
-            diag3[i] = "G17";
+            diag3[i] = "17";
             i++;
         }
         if(G18.isChecked()){
-            diag3[i] = "G18";
+            diag3[i] = "18";
             i++;
         }
         if(G20.isChecked()){
-            diag3[i] = "G20";
+            diag3[i] = "20";
             i++;
         }
         if(G21.isChecked()){
-            diag3[i] = "G21";
+            diag3[i] = "21";
             i++;
         }
         if(G24.isChecked()){
-            diag3[i] = "G24";
+            diag3[i] = "24";
             i++;
         }
         if(G25.isChecked()){
-            diag3[i] = "G25";
+            diag3[i] = "25";
             i++;
         }
         if(G2.isChecked()){
-            diag3[i] = "G2";
+            diag3[i] = "2";
             i++;
         }
         if(G27.isChecked()){
-            diag3[i] = "G27";
+            diag3[i] = "27";
             i++;
         }
         if(G29.isChecked()){
-            diag3[i] = "G29";
+            diag3[i] = "29";
             i++;
         }
         if(G34.isChecked()){
-            diag3[i] = "G34";
+            diag3[i] = "34";
             i++;
         }
         if(G39.isChecked()){
-            diag3[i] = "G39";
+            diag3[i] = "39";
             i++;
         }
         if(G40.isChecked()){
-            diag3[i] = "G40";
+            diag3[i] = "40";
             i++;
         }
         //G21.setText(Integer.toString(diag1.length));

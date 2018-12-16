@@ -58,52 +58,72 @@ public class Diagnosa4 extends AppCompatActivity {
         diag4 = new String[i];
         i = 0;
         if(G1.isChecked()){
-            diag4[i] = "G1";
+            diag4[i] = "1";
             i++;
         }
         if(G15.isChecked()){
-            diag4[i] = "G15";
+            diag4[i] = "15";
             i++;
         }
         if(G26.isChecked()){
-            diag4[i] = "G26";
+            diag4[i] = "26";
             i++;
         }
         if(G35.isChecked()){
-            diag4[i] = "G35";
+            diag4[i] = "35";
             i++;
         }
         if(G30.isChecked()){
-            diag4[i] = "G30";
+            diag4[i] = "30";
             i++;
         }
         if(G36.isChecked()){
-            diag4[i] = "G36";
+            diag4[i] = "36";
             i++;
         }
         if(G37.isChecked()){
-            diag4[i] = "G37";
+            diag4[i] = "37";
             i++;
         }
         if(G44.isChecked()){
-            diag4[i] = "G44";
+            diag4[i] = "44";
             i++;
         }
+
+        String diagnosis = "";
+        for(i=0;i<diag1.length;i++){
+            diagnosis = diagnosis + diag1[i] + ",";
+        }
+        for(i=0;i<diag2.length;i++){
+            diagnosis = diagnosis + diag2[i] + ",";
+        }
+        for(i=0;i<diag3.length;i++){
+            diagnosis = diagnosis + diag3[i] + ",";
+        }
+        for(i=0;i<diag4.length;i++){
+            diagnosis = diagnosis + diag4[i] + ",";
+        }
+        int comma = diagnosis.length();
+        int idPenyakit = 1;
+        //G1.setText(Integer.toString(comma));
+        //diagnosis.substring(0,comma-1);
+        //G15.setText(diagnosis.substring(0,comma-1));
         DatabaseHelper dbHelper = new DatabaseHelper(this);
         SQLiteDatabase db = dbHelper.getReadableDatabase();
-        cursor = db.rawQuery("SELECT * FROM penyakit_table WHERE penyakit_id = '1'",null);
+        cursor = db.rawQuery("select *,count(*),cast((count(*)*1.0)/b.jml_gejala as DECIMAL(6,2)) as ini from aturan_table a\n" +
+                "join penyakit_table b on a.id_penyakit = b.penyakit_id\n" +
+                "where a.id_gejala in (" + diagnosis.substring(0,comma-1) + ")\n" +
+                "group by a.id_penyakit\n" +
+                "order by ini DESC\n" +
+                "limit 1;",null);
         if (cursor.getCount()>0)
         {
             cursor.moveToPosition(0);
-            //id.setText(cursor.getString(0).toString());
-            //nama.setText(cursor.getString(1).toString());
-            //solusi.setText(cursor.getString(2).toString());
-            //pencegahan.setText(cursor.getString(3).toString());
+            idPenyakit = cursor.getInt(2);
         }
-        //G43.setText(Integer.toString(diag1.length));
         //G45.setText(Integer.toString(diag4.length));
         Intent intent = new Intent(this, Solusi.class);
-        //intent.putExtra("diag1", diag1);
+        intent.putExtra("idPenyakit", idPenyakit);
         //intent.putExtra("diag2", diag2);
         //intent.putExtra("diag3", diag3);
         //intent.putExtra("diag4", diag4);
