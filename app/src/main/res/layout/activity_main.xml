@@ -9,9 +9,11 @@
     >
 
     <ImageView
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="match_parent"
-        android:src="@drawable/header"/>
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/header" />
 
 
     <ProgressBar
