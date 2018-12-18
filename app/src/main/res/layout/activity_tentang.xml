@@ -24,14 +24,14 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_marginStart="0dp"
-            android:layout_marginTop="2dp"
+            android:layout_marginTop="0dp"
             android:gravity="center"
             android:text="Flu-Aktub"
             android:textAlignment="center"
             android:textColor="#F0F8FF"
             android:textSize="40dp" />
 
-        <me.biubiubiu.justifytext.library.JustifyTextView
+        <TextView
             android:id="@+id/text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -39,24 +39,20 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_marginStart="11dp"
-            android:layout_marginTop="72dp"
+            android:layout_marginTop="62dp"
             android:layout_marginEnd="0dp"
             android:text="Flu-aktub merupakan aplikasi yang memiliki fungsi utama untuk mengidentifikasi jenis penyakit flu dengan cara melakukan diagnosis pada tiap-tiap gejala. Arti nama flu-aktub, dimana flu merupakan penyakit, kemudian aktub yg diambil dari bahasa arab yg berarti jenis."
             android:textColor="#F0F8FF"
             android:textSize="18sp" />
 
-        <TextView
+        <ImageView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="0dp"
-            android:layout_marginBottom="179dp"
-            android:text="TEAM ARCHITECH"
-            android:textAlignment="center"
-            android:textColor="#F0F8FF"
-            android:textSize="30sp"
-            android:textStyle="bold" />
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="233dp"
+            android:src="@drawable/logoarchitech" />
 
 
         <TextView
